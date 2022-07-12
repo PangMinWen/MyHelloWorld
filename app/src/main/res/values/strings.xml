@@ -4,4 +4,6 @@
     <string name="TextNumber">Hello</string>
     <string name="rollDice">ROLL</string>
     <string name="playerName">Player 1</string>
+    <string name="rules">AAAAAA</string>
+    <string name="updateBtn">Update</string>
 </resources>
