@@ -3,4 +3,5 @@
     <string name="helloText">Hello Class!</string>
     <string name="TextNumber">Hello</string>
     <string name="rollDice">ROLL</string>
+    <string name="playerName">Player 1</string>
 </resources>

@@ -5,16 +5,34 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
     android:orientation="vertical"
     tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/playerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/playerName"
+        style="@style/NumbStyle"/>
 
     <TextView
         android:id="@+id/numberText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="@string/TextNumber" />
+        android:text="Roll Dice"
+        style="@style/NumbStyle" />
+
+    <ImageView
+        android:id="@+id/diceImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:srcCompat="@drawable/empty_dice"
+        tools:srcCompat="@drawable/dice_1"/> <!--show preview during design-->
 
     <Button
         android:id="@+id/rollButton"
@@ -22,7 +40,6 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:text="@string/rollDice" />
-
 
 
 </LinearLayout>
