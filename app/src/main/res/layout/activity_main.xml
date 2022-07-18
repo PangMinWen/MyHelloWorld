@@ -1,49 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--<androidx.constraintlayout.widget.ConstraintLayout -->
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_gravity="center_vertical"
+    android:layout_margin="@dimen/layout_margin"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
-        <LinearLayout
-            android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/playerName"
+            style="@style/NumbStyle"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal" >
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="3"
+            android:text="@string/playerName" />
 
-            <TextView
-                android:id="@+id/playerName"
-                style="@style/NumbStyle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_weight="3"
-                android:text="@string/playerName" />
-
-            <Button
-                android:id="@+id/renameBtn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/updateBtn" />
-        </LinearLayout>
-    </ScrollView>
+        <Button
+            android:id="@+id/renameBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/updateBtn" />
+    </LinearLayout>
 
     <TextView
         android:id="@+id/numberText"
+        style="@style/NumbStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="Roll Dice"
-        style="@style/NumbStyle" />
+        android:text="Roll Dice" />
 
     <ImageView
         android:id="@+id/diceImage"
@@ -51,7 +46,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         app:srcCompat="@drawable/empty_dice"
-        tools:srcCompat="@drawable/dice_1"/> <!--show preview during design-->
+        tools:srcCompat="@drawable/dice_1" /> <!--show preview during design-->
 
     <Button
         android:id="@+id/rollButton"
@@ -68,12 +63,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
             <TextView
-                android:id="@+id/diceRiles"
+                android:id="@+id/diceRules"
+                style="@style/NumbStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/rules"
-                style="@style/NumbStyle"/>
+                android:text="@string/rules" />
         </LinearLayout>
     </ScrollView>
 
