@@ -3,7 +3,7 @@
     <string name="helloText">Hello Class!</string>
     <string name="TextNumber">Hello</string>
     <string name="rollDice">ROLL</string>
-    <string name="playerName">Player 1</string>
+    <string name="playerName"></string>
     <string name="rules">To pass is to roll a 7 or 11 on the come out roll.
         \n\nTo crap is to roll a 2, 3, or 12 on the come out roll.
         \n\nThe point is any value between 4 and 10 rolled on the come out.
@@ -11,5 +11,6 @@
         \n\nTo crap is to roll a 2, 3, or 12 on the come out roll.
         \n\nThe point is any value between 4 and 10 rolled on the come out.
         \n\nTo seven out is to roll a seven before rolling the point.</string>
-    <string name="updateBtn">Update</string>
+    <string name="editPlayerName">Type name here</string>
+    <string name="updatePlayerNameTxt">Update</string>
 </resources>
